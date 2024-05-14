@@ -120,12 +120,12 @@ body {
 }
 
 ::selection {
-  background: #5db93c;
+  background: #1470AF;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #5db93c;
+  background: #1470AF;
   color: #fff;
 }
 
@@ -147,7 +147,7 @@ body {
 
 .main-white-button a {
   font-size: 13px;
-  color: #5db93c;
+  color: #1470AF;
   background-color: #fff;
   padding: 12px 25px;
   display: inline-block;
@@ -174,7 +174,7 @@ body {
 .section-heading h6 {
   position: relative;
   font-size: 15px;
-  color: #5db93c;
+  color: #1470AF;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -188,7 +188,7 @@ body {
   position: absolute;
   left: 0;
   top: 8px;
-  background-color: #5db93c;
+  background-color: #1470AF;
 }
 
 .section-heading h2 {
@@ -223,11 +223,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #5db93c!important;
+  color: #1470AF!important;
 }
 
 .background-header .nav li a.active {
-  color: #5db93c!important;
+  color: #1470AF!important;
 }
 
 .header-area {
@@ -245,13 +245,13 @@ header
 }
 
 .header-area .main-nav {
-  min-height: 80px;
+  min-height: 100px;
   background: transparent;
 }
 .logo-img{
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
+
+  width: 80px;
+  height: 80px;
 }
 
 .header-area .main-nav .logo {
@@ -267,6 +267,8 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+
 
 .background-header .main-nav .logo {
   line-height: 75px;
@@ -320,12 +322,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #5db93c!important;
+  color: #1470AF!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #5db93c!important;
+  color: #1470AF!important;
   opacity: 1;
 }
 
@@ -387,7 +389,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #5db93c!important;
+  color: #1470AF!important;
   padding-left: 25px;
 }
 
@@ -519,6 +521,7 @@ header
 }
 
 .header-area.header-sticky {
+  
   min-height: 80px;
 }
 
@@ -527,7 +530,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #5db93c;
+  color: #1470AF;
 }
 
 @media (max-width: 1200px) {
@@ -546,7 +549,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #5db93c!important;
+    color: #1470AF!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -604,7 +607,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #5db93c!important;
+    color: #1470AF!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -673,20 +676,24 @@ banner
 
 #top .left-content .inner-content {
   position: absolute;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+
+  
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
 }
 
 #top .left-content h4 {
-  font-family: 'Dancing Script', cursive;
   color: #fff;
-  font-size: 54px;
+  font-size: 44px;
   font-weight: 700;
 }
 
 #top .left-content h6 {
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -704,20 +711,21 @@ banner
 }
 
 /* ==== Main CSS === */
-.img-fill{
-  width: 100%;
-  display: block;
-  overflow: hidden;
+.img-fill {
   position: relative;
-  text-align: center
+  width: 100%; /* Full width of the parent */
+  overflow: hidden; /* Ensures no overflow of the image outside the container */
+  /* Example for a 16:9 aspect ratio */
+  padding-top: 56.25%; /* 9 / 16 = 0.5625 */
 }
 
 .img-fill img {
-  min-height: 100%;
-  min-width: 100%;
-  position: relative;
-  display: inline-block;
-  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:fill; /* Cover might be better if you want to fill the area */
 }
 
 *,
@@ -765,7 +773,7 @@ banner
   right:30px;
   width: 50px;
   height: 50px;
-  background-color: #5db93c;
+  background-color: #1470AF;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -794,7 +802,7 @@ banner
   left:30px;
   width: 50px;
   height: 50px;
-  background-color: #5db93c;
+  background-color: #1470AF;
   border:0 none;
   line-height: 44px;
   border-radius: 50%;
@@ -889,7 +897,7 @@ about
   display: inline-block;
   line-height: 70px;
   text-align: center;
-  background-color: #5db93c;
+  background-color: #1470AF;
   color: #fff;
   border-radius: 50%;
   transform: translate(-35px, -35px);
@@ -908,7 +916,7 @@ menu
 */
 
 #menu {
-  margin-top: 120px;
+  
   background-color: #fffafa;
   padding: 120px 0px;
 }
@@ -949,8 +957,8 @@ menu
 .info {
   position: relative;
   width: 100%;
-  background-color: #5db93c;
-  border: 1px solid #5db93c;
+  background-color: #1470AF;
+  border: 1px solid #1470AF;
   transform: translateY(100%)
   translateY(120px)
   translateZ(0);
@@ -979,7 +987,7 @@ menu
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: #5db93c;
+  background-color: #1470AF;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -1023,7 +1031,7 @@ menu
 #menu .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #5db93c;
+  color: #1470AF;
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -1055,7 +1063,7 @@ menu
 #menu .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #5db93c;
+  color: #1470AF;
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
@@ -1093,11 +1101,11 @@ chefs
 }
 
 #chefs .chef-item:hover {
-  border-color: #5db93c;
+  border-color: #1470AF;
 }
 
 #chefs .chef-item:hover .down-content h4 {
-  color: #5db93c;
+  color: #1470AF;
 }
 
 #chefs .chef-item .thumb {
@@ -1154,7 +1162,7 @@ chefs
 }
 
 #chefs .chef-item .thumb ul.social-icons li a:hover {
-  background-color: #5db93c;
+  background-color: #1470AF;
 }
 
 #chefs .chef-item:hover .overlay {
@@ -1246,7 +1254,7 @@ reservation
   text-align: center;
   line-height: 70px;
   color: #fff;
-  background-color: #5db93c;
+  background-color: #1470AF;
   border-radius: 50%;
   font-size: 24px;
   margin-top: -35px;
@@ -1272,7 +1280,7 @@ reservation
 
 #reservation .phone span a:hover,
 #reservation .message span a:hover {
-  color: #5db93c;
+  color: #1470AF;
 }
 
 #contact {
@@ -1318,14 +1326,14 @@ reservation
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-color: #5db93c;
+  border-color: #1470AF;
 }
 
 .contact-form button {
   margin-top: -10px;
   font-size: 13px;
   color: #fff;
-  background-color: #5db93c;
+  background-color: #1470AF;
   padding: 12px 25px;
   width: 100%;
   box-shadow: none;
@@ -1417,8 +1425,9 @@ offers
   margin: 0 auto 15px auto;
 }
 #offers #tabs ul .ui-tabs-active a {
-  color: #5db93c;
+  color: #1470AF;
   position: relative;
+  font-size: larger;
 }
 #offers #tabs ul .ui-tabs-active span {
   color: #1e1e1e;
@@ -1467,7 +1476,7 @@ offers
   right: 0;
   width: 70px;
   height: 70px;
-  background-color: #5db93c;
+  background-color: #1470AF;
   display: inline-block;
   text-align: center;
   line-height: 70px;
@@ -1487,7 +1496,7 @@ footer
 footer {
   margin-top: 60px;
   padding: 50px 0px;
-  background-color: #5db93c;
+  background-color: #1470AF;
 }
 
 footer .left-text-content p {
@@ -1532,7 +1541,7 @@ footer .right-text-content ul li a {
   font-size: 20px;
   background-color: #fff;
   border-radius: 50%;
-  color: #5db93c;
+  color: #1470AF;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -1609,7 +1618,7 @@ responsive
 
 #preloader {
   overflow: hidden;
-  background-color: #5db93c;
+  background-color: #1470AF;
   left: 0;
   right: 0;
   top: 0;
@@ -1684,4 +1693,26 @@ responsive
   100% {
     opacity: 0;
   }
+}
+/* 
+meeeee
+*/
+.the-pdf-mnue{
+  width: 50%;
+  height: 50%;
+  margin:auto;
+}
+.m-image{
+  margin-top: 20pX;
+  width: 100%;
+  height: 100%;
+}
+.m-header{
+  margin-bottom: -10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sweet{
+  margin-bottom: 10%;
 }
